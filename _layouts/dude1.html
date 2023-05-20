@@ -92,9 +92,14 @@ header .overlay {
   </style>
 
   <script id="insert"></script>
+  <script>    function myFunction() {
+    document.getElementById("demo").style.color = "red";
+    console.log("myFunction");
+  }</script>
 
     <script src="/js/stringify.js?67dd239ea46c4fe66f782c02980889cc54362b0d" charset="utf-8"></script>
     <script>
+      
       const customConsole = (w) => {
         const pushToConsole = (payload, type) => {
           w.parent.postMessage({
@@ -167,6 +172,7 @@ header .overlay {
       if (window.parent){
         customConsole(window)
       }
+  
     </script>
 </head>
 <body>
@@ -230,8 +236,8 @@ header .overlay {
       <div class="col-md-8 mx-auto">
         <div class="container text-center">
             <div class="row align-items-center">
-              <div class="col">
-                One of three columns
+              <div id="demo" class="col">
+                One of three columnsfsfsd
               </div>
               <div class="col">
                 One of three columns

@@ -167,6 +167,10 @@ header .overlay {
       if (window.parent){
         customConsole(window)
       }
+      function myFunction() {
+  document.getElementById("demo").style.color = "red";
+  console.log("myFunction");
+}
     </script>
 </head>
 <body>
@@ -207,7 +211,7 @@ header .overlay {
   <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
-        <h1 class="display-3">Video Header</h1>
+        <h1 id="demo" class="display-3">Video Header</h1>
         <p class="lead mb-0">Using HTML5 Video and Bootstrap</p>
       </div>
     </div>
@@ -230,8 +234,8 @@ header .overlay {
       <div class="col-md-8 mx-auto">
         <div class="container text-center">
             <div class="row align-items-center">
-              <div class="col">
-                One of three columns
+              <div id="demo" class="col">
+                One of three columnssdfsdfd
               </div>
               <div class="col">
                 One of three columns
@@ -247,7 +251,7 @@ header .overlay {
         <div class="col-md-8 mx-auto">
           <div class="container text-center">
               <div class="row align-items-center">
-                <div class="col">
+                <div onclick="myFunction()" class="col">
                   Brand Marketing
                 </div>
                 <div class="col">
